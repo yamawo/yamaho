@@ -1,30 +1,29 @@
 @import url(sanitize.css);
 
 .toplist{
-	color:#474a4d;
-	list-style: none;
-	padding:120px 200px ;
-		
+  color:#474a4d;
+  list-style: none;
+  padding:120px 200px ;
 }
 
 body{
-	background-image: url(../img/toppage.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-color: #000000;
+  background-image: url(../img/toppage.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000000;
 }
 
 ol{
-	counter-reset: item;
+  counter-reset: item;
 }
 
 li{
-    font-family: Lato;
-	font-size: 50px;
-	padding-bottom: 30px;
+  font-family: Lato;
+  font-size: 50px;
+  padding-bottom: 30px;
 }
 
-li:before{
-	counter-increment: item;
-	content:counter(item,{decimal-leading-zero});
+li::before{
+  counter-increment: item;
+  content:counter(item,decimal-leading-zero);
 }
