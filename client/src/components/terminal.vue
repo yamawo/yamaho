@@ -5,12 +5,12 @@
         </div>
         <div class="terminal">
             <div class="wrapper">
-                <div class="time">Last login:{{timeCommandLineFormat()}} on tty0413</div>
+                <div class="time">Last login:{{timeCommandLineFormat()}} on tty0731</div>
                 <div v-for="command in commands">
-                    <div ><span class='command'>kurisu@127.0.0.1 ~/develop $ </span>{{command[0]}}</div>
+                    <div ><span class='command'>yamawo@127.0.0.1 ~/develop $ </span>{{command[0]}}</div>
                     <div v-html="command[1]"/>
                 </div>
-                <span class='command'>kurisu@127.0.0.1 ~/develop $ </span>vim hello.go <span class="cursor"></span>
+                <span class='command'>yamawo@127.0.0.1 ~/develop $ </span>vim hello.go <span class="cursor"></span>
             </div>
         </div>
     </div>
