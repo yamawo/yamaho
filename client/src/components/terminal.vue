@@ -24,10 +24,10 @@
     		return{
     			now : new Date(),
     			commands : [
-	                ["whoami","Kurisu"],
-	                ["birth","1996/04/13"],
-	                ["hobby","BasketBall,Reading,Programming"],
-	                ["mail","ryooomaaa0413[at]gmail.com"]
+	                ["whoami","Yamasaki Shota"],
+	                ["birth","1995/07/31"],
+	                ["hobby","Soccer,Playing FIFA,Programming"],
+	                ["mail","y7a3m1asaki[at]gmail.com"]
 	            ],
     		}
     	},
