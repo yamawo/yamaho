@@ -1,6 +1,6 @@
 <template>
   <div class="contact">
-    <h1>This is an {{pageName}} page</h1>
+    <h1>This is a {{pageName}} page</h1>
     {{getNow()}}
     <div v-for="item in list" :key=item>
     	{{item}}
