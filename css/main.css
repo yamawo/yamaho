@@ -3,7 +3,11 @@
 .toplist{
   color:#474a4d;
   list-style: none;
-  padding:120px 200px ;
+  padding:120px 130px ;
+}
+
+.toplist li::hover{
+  background: rgba(255,255,255,0.7);
 }
 
 body{
@@ -25,5 +29,7 @@ li{
 
 li::before{
   counter-increment: item;
-  content:counter(item,decimal-leading-zero);
+  content:counter(item,decimal-leading-zero)"   ";
+  font-size: 15px;
 }
+
