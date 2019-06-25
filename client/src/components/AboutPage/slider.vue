@@ -6,6 +6,19 @@
 	    <div><img src="../../assets/griezmann-1.jpg"></div>
 	    <div><img src="../../assets/yamasaki-1.png"></div>
     </slick>
+　   <div class="profile">
+        <ul>
+            <li>氏名：山﨑　翔太,YAMASAKI SHOTA</li>
+            <li>出身大学：大阪工業大学 工学部 環境工学科</li>
+            <li>趣味：サッカー観戦,プログラミング</li>
+        </ul>
+    </div>
+        <div class="university">
+        </div>   
+            <div class="giriezmann">
+            </div>
+                <div class="skill">
+                </div>
   </div>
 </template>
 
