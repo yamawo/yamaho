@@ -31,13 +31,10 @@ export default {
      return {
      	msg: 'This is "BIG3"',
      	slickOptions: {
-     		arrows: false,
+     		    arrows: false,
             autoplay: true,
-            autoplaySpeed: 6000,
-            dots: true,
-            fade: true,
-            appendDots: $('.dots')
-
+            autoplaySpeed: 5500,
+            fade: true
      	}
      }
 	},
