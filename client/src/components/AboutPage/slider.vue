@@ -7,20 +7,15 @@
     style="text-shadow: 0px 0px 2px #000"
     fade
     indicators
-    
+    img-height="300px"
   >
     <b-carousel-slide
-      caption="First slide"
-      src="~/assets/INTER-2.jpg"
-    ></b-carousel-slide>
-    <b-carousel-slide
-      caption="Second Slide"
-      img-src="../../assets/griezmann-1.jpg"
-    ></b-carousel-slide>
-    <b-carousel-slide
-      caption="Third Slide"
-      img-src="../../assets/yamasaki-1.png"
-    ></b-carousel-slide>
+      v-for="carousel in carouselList"
+      :key="carousel.src"
+      :caption="carousel.description"
+      :img-src="carousel.src"
+    > 
+    </b-carousel-slide>
   </b-carousel>
     <div class="profile">
         <ul>
@@ -36,29 +31,26 @@
                 <div class="skill">
                 </div>
 </div>
- 
   
 </template>
 
 <script>
-import Slick from 'vue-slick'
-import '../../../node_modules/slick-carousel/slick/slick.css' 
 export default {
-	name: 'slider',
-	data () {
+  name: 'slider',
+  data () {
      return {
-     	msg: 'This is "BIG3"',
-     	slickOptions: {
-     		    arrows: false,
-            autoplay: true,
-            autoplaySpeed: 5500,
-            fade: true
-     	}
+      msg: 'This is "BIG3"',
      }
-	},
-	components: {
-		Slick
-	}
+  },
+  computed:{
+    carouselList:()=>{
+      return [
+        {src:"/img/about/INTER-2.jpg",description:"inter"},
+        {src:"/img/about/griezmann-1.jpg",description:"griezman"},
+        {src:"/img/about/yamasaki-1.png",description:"yamao"},
+      ]
+    }
+  }
 }
 </script>
 
