@@ -22,6 +22,10 @@
 	}
 </script>
 <style scoped>
+.contact{
+	float: left;
+	clear: left;
+}
 	
 	
 </style>

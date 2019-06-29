@@ -1,17 +1,20 @@
 <template>
   <div class="secondPage">
-
-    <about />
+    
+    
+    <slider />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import About from '@/components/AboutPage/slider.vue'
+import Slider from '@/components/AboutPage/slider.vue'
+
+
 export default {
-  name: 'second',
+  name: 'about',
   components: {
-    About
+    Slider
   }
 }
 </script>
