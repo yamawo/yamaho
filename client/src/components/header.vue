@@ -14,22 +14,6 @@
 </template>
 
 <script>
-import 'vue-hamburger/index.css'
-Vue.component('hamburger', require('vue-hamburger'))
- 
-
-export default{
-        name: 'headermenu',
-
-
-components:('mobile-nav',{
-  data: function() {
-    return {
-      open: false 
-
-    }
-  }
-})}
 </script>
 
 <style scoped>
