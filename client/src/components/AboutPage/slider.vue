@@ -7,7 +7,7 @@
     style="text-shadow: 0px 0px 2px #000"
     fade
     indicators
-    img-height="300px"
+    img-height="300"
   >
     <b-carousel-slide
       v-for="carousel in carouselList"
@@ -55,13 +55,6 @@ export default {
 </script>
 
 <style scoped>
-slick {
-    max-width: 300px;
-    margin: 0;
-    auto: 50px;
-    padding: 0;
-    height: auto;
-}
 
 img {
     height: 30vh;
