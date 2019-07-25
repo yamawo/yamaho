@@ -1,22 +1,32 @@
 <template>
 <div id="app" >
-  <header id="header">
-<mobile-nav>
-    <hamburger
-        :stroke='2'
-        :gap='5'
-        color='#192a35'
-        :open.sync='open'>
-    </hamburger>
-</mobile-nav>
-  </header>
+  <video src="/video/PexelsVideos.mp4" poster="/public/img/home/pexelPhoto.jpeg" autoplay loop preload="auto">
+  </video>
 </div>
 </template>
 
 <script>
+export default {
+  name: 'headermenu',
+  components: {
+      
+
+      
+  }
+}
 </script>
 
 <style scoped>
+video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 1;
+}
 </style>
 
 

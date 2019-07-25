@@ -5,17 +5,6 @@ import './registerServiceWorker'
 import BootstrapVue from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
-import 'vue-hamburger/index.css'
-Vue.component('hamburger', require('vue-hamburger'))
- 
-
-Vue.component('mobile-nav', {
-  data: function() {
-    return {
-      open: false 
-    }
-  }
-})
 
 Vue.use(BootstrapVue)
 Vue.config.productionTip = false

@@ -1,19 +1,23 @@
 <template>
   <div id="containar">
-     <headermenu />
-     <router-view />
+    <div class="main-content columns is-fullheight">
+      <SideMenu  />
+      <div class="container column is-10">
+       <router-view /> 
+      </div>
+    </div>
   </div>
 </template>
 
 
 <script>
-import Headermenu from '@/components/header.vue'
+import SideMenu from '@/components/topPage/SideMenu'
 
 
 export default{
   name:"app",
   components:{
-    Headermenu
+   SideMenu
   }
 
 }
@@ -21,23 +25,14 @@ export default{
 </script>
 
 
-<style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<style lang="sass">
+// サイドメニューの色
+$menu-item-active-background-color: hsl(171, 100%, 41%);
+$menu-item-color: hsl(0, 0%, 100%);
 
-}
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
+
+@import '~bulma';
+$fa-font-path: '~font-awesome/fonts/';
+@import '~font-awesome/scss/font-awesome';
+
 </style>

@@ -1,6 +1,7 @@
 <template>
 
   <div>
+
   <h1>{{ msg }}</h1>
   <b-carousel
     id="carousel-fade"
